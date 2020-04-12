@@ -1,0 +1,24 @@
+{% extends "file_upload/base.html" %}
+
+{% block content %}
+<h3></h3>
+
+{% if files %}
+<table class="table table-striped">
+
+    <btbody>
+ 
+    <tr>
+        Value of <b>{{ value }}</b> in {{ year }} : {{search_value}} 
+    </tr>
+    <tr>
+        <td><a href="/file/download{{ files.url }}/" class="buttonDownload">Download</a></td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+{% endif %}
+
+{% endblock %}
